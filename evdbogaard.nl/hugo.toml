@@ -3,7 +3,7 @@
 #title = 'My New Hugo Site'
 #theme = 'hello-friend-ng'
 
-baseurl      = "localhost"
+baseurl      = "https://zealous-stone-00f9d2103.3.azurestaticapps.net/"
 title        = "My Blog"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
