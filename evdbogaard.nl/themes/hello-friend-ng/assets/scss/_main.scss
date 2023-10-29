@@ -442,3 +442,13 @@ hr {
   margin: 0 auto;
   padding: 4px;
 }
+
+.main-container {
+    display: flex;
+
+    .main-container-child {
+        text-align: left;
+        margin: 4px;
+    }
+}
+
