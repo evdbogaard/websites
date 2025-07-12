@@ -1,8 +1,10 @@
-baseurl      = "localhost"
+baseurl      = "https://evdbogaard.nl/"
 title        = "My Blog"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
-paginate     = 10
+
+[pagination]
+  pagerSize = 10
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -34,14 +36,14 @@ paginate     = 10
 
 [languages]
   [languages.en]
-    title = "Hello Friend NG"
-    subtitle = "A simple theme for Hugo"
-    keywords = ""
+    title = "Erwin van den Bogaard"
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-    readOtherPosts = "Read other posts"
+    #subtitle = "A simple theme for Hugo"
+    #keywords = ""
+    #readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "hello friend ng"
+      logoText = "echo \"Erwin van den Bogaard\""
       logoHomeLink = "/"
     # or
     #
