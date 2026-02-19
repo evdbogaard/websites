@@ -12,6 +12,16 @@ RUN apt-get update \
     curl \
     git \
     unzip \
+    # Install PowerShell dependencies
+    && apt-get install -y --no-install-recommends wget apt-transport-https software-properties-common \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install PowerShell
+RUN wget -q "https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb" -O packages-microsoft-prod.deb \
+    && dpkg -i packages-microsoft-prod.deb \
+    && rm packages-microsoft-prod.deb \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends powershell \
     && rm -rf /var/lib/apt/lists/*
 
 # Download and install Hugo Extended
@@ -22,5 +32,13 @@ RUN curl -L -o hugo.tar.gz "https://github.com/gohugoio/hugo/releases/download/v
 # Verify installation
 RUN hugo version
 
+# Create a non-root user and set permissions
+RUN useradd -m -s /usr/bin/pwsh vscode \
+    && mkdir -p /workspace \
+    && chown -R vscode:vscode /workspace
+
 # Set default workdir
 WORKDIR /workspace
+
+# Switch to non-root user
+USER vscode
