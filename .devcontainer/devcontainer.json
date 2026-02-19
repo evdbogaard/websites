@@ -2,9 +2,10 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/debian
 {
 	"name": "Debian",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
-	"postCreateCommand": "sudo apt update && sudo apt install -y hugo"
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"postCreateCommand": "chown -R 1000:1000 /workspaces/websites"
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
