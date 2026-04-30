@@ -1,0 +1,5 @@
+Hello, I'm Erwin, a full-stack developer with over a decade of experience since my introduction to the field in 2006. I discovered my passion for .NET core and Azure cloud in 2019, and they have been my main focus ever since. My expertise lies in backend development, Azure, and working with infrastructure as code using Bicep.
+
+During my free time, I enjoy writing tech blogs, in which I share technology I encountered during my work. Occasionally, you might catch me in Betatalks videos, discussing various tech topics. I also and working on personal projects, home automation , playing video games, and gather with friend to enjoy tabletop RPG games.
+
+Lately, I've been exploring public speaking as well. It's a new experience for me, where I get to share my knowledge and enthusiasm with other developers on subjects similar to those in my blogs. I find it quite enjoyable, mainly because I appreciate the interaction it offers with people, which for me sets it apart from a regular blog post.
