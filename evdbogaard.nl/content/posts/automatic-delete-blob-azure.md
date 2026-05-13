@@ -1,7 +1,7 @@
 ---
 title: "Automatically deleting blobs in Azure Blob Storage"
 date: 2026-05-13T10:00:00+02:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
