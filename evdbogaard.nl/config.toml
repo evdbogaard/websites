@@ -11,6 +11,9 @@ pagerSize = 15
 [markup.highlight]
 style = "github-dark"
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
   author = "Erwin van den Bogaard"
   #info = "Full Stack DevOps and Magician"
